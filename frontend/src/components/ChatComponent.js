@@ -1,7 +1,7 @@
 import { Avatar, IconButton } from '@mui/material';
 import React from 'react';
 
-import { MoreVert, SearchOutlined, InsertEmoticon, Mic } from '@mui/icons-material';
+import { MoreVert, SearchOutlined, InsertEmoticon, Mic,Send } from '@mui/icons-material';
 
 
 
@@ -31,12 +31,22 @@ function ChatComponent() {
       </p>
     </div>
     <div className='chat-footer'>
+      <IconButton >
       <InsertEmoticon />
+      </IconButton>
+      
       <form>
         <input placeholder='Type a message' type="text"/>
         <button>Submit</button>
       </form>
+      <IconButton>
+      <Send />
+      </IconButton>
+      <IconButton>
       <Mic />
+      </IconButton>
+      
+      
     </div>
   </div>;
 }
